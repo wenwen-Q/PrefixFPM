@@ -1,4 +1,4 @@
-## PrefixFTM: A Parallel Framework for Mining Frequent Tree
+## PrefixFPM: A Parallel Framework for Mining Frequent Pattern
 Following divide and conquer, this system treats each pattern to examine and extend as a task, and parallelizes all tasks as much as possible following the idea of divide and conquer. This allows it to use all CPU cores in a machine to mine frequent patterns over big data.
 
 There are 2 applications on top of our framework. Here are the folder structures:
