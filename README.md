@@ -6,10 +6,10 @@ There are 2 applications on top of our framework. Here are the folder structures
 * system: the general-purpose programming interface
 * app
     * treeminer: the parallel version developed on serial treeminer[1]
-    * prefixtreespan: the gSpan parallel version developed on serial prefixtreespa[2]n
-* sleuth: the Sleuth parallel version developed on top for subtree mining
+    * prefixtreespan: the gSpan parallel version developed on serial prefixtreespan[2]
 
 [1] Mohammed J. Zaki. Efficiently mining frequent embedded unordered trees. Fundamenta Informaticae, 66(1-2):33–52, Mar/Apr 2005. Special issue on Advances in Mining Graphs, Trees and Sequences.
+
 [2] Zou L., Lu Y., Zhang H., Hu R. PrefixTreeESpan: A Pattern Growth Algorithm for Mining Embedded Subtrees. In: Aberer K., Peng Z., Rundensteiner E.A., Zhang Y., Li X. (eds) Web Information Systems – WISE 2006. WISE 2006. Lecture Notes in Computer Science, vol 4255. Springer, Berlin, Heidelberg
 
 
