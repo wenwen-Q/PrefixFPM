@@ -1,18 +1,17 @@
-## PrefixFPM: A Parallel Framework for Mining Frequent Patterns
+## PrefixFTM: A Parallel Framework for Mining Frequent Tree
 Following divide and conquer, this system treats each pattern to examine and extend as a task, and parallelizes all tasks as much as possible following the idea of divide and conquer. This allows it to use all CPU cores in a machine to mine frequent patterns over big data.
 
-There are 3 applications on top of our framework. Here are the folder structures:
+There are 2 applications on top of our framework. Here are the folder structures:
 
 * system: the general-purpose programming interface
-* prefixspan: the PrefixSpan parallel version developed on top for sequence mining
-* gspan: the gSpan parallel version developed on top for subgraph mining
+* app
+    * treeminer: the parallel version developed on serial treeminer[1]
+    * prefixtreespan: the gSpan parallel version developed on serial prefixtreespa[2]n
 * sleuth: the Sleuth parallel version developed on top for subtree mining
 
-The applicatons are adapted from:
+[1] Mohammed J. Zaki. Efficiently mining frequent embedded unordered trees. Fundamenta Informaticae, 66(1-2):33–52, Mar/Apr 2005. Special issue on Advances in Mining Graphs, Trees and Sequences.
+[2] Zou L., Lu Y., Zhang H., Hu R. PrefixTreeESpan: A Pattern Growth Algorithm for Mining Embedded Subtrees. In: Aberer K., Peng Z., Rundensteiner E.A., Zhang Y., Li X. (eds) Web Information Systems – WISE 2006. WISE 2006. Lecture Notes in Computer Science, vol 4255. Springer, Berlin, Heidelberg
 
-* PrefixSpan: http://chasen.org/~taku/software/prefixspan/prefixspan-0.4.tar.gz
-* gSpan: https://github.com/rkwitt/gboost/tree/master/src-gspan
-* Sleuth: http://www.cs.rpi.edu/~zaki/www-new/pmwiki.php/Software/Software#toc19
 
 Note that OpenMP is used and should be enabled in your Makefile. There are 3 run_XXX.cpp files for the 3 applications above. To compile each one, you may run "cp run_XXX.cpp run.cpp" and then run "make". The compiled "run" program can be renamed to a meaningful name for later use.
 
